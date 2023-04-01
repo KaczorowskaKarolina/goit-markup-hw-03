@@ -12,30 +12,41 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+      integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
 
   <body>
     <header class="header">
-      <a class="a" href="./"><span class="web">Web</span><span class="studio">Studio</span></a>
-      <nav>
-        <ul>
-          <li><a class="link-nav" href="./">Agencja</a></li>
-          <li><a class="link-nav" href="./portfolio.html">Portfolio</a></li>
-          <li><a class="link-nav" href="#contact">Kontakt</a></li>
+      <div class="cointainer">
+        <div class="logo-menu">
+          <a class="a" href="./"><span class="web">Web</span><span class="studio">Studio</span></a>
+          <nav>
+            <ul class="menu">
+              <li><a class="link-nav" href="./">Agencja</a></li>
+              <li><a class="link-nav" href="./portfolio.html">Portfolio</a></li>
+              <li><a class="link-nav" href="#contact">Kontakt</a></li>
+            </ul>
+          </nav>
+        </div>
+        <ul class="contact-header">
+          <li>
+            <a class="link-contact-header" href="mailto:info@devstudio.com">info@devstudio.com</a>
+          </li>
+          <li><a class="link-contact-header" href="tel:+48111111111">+48 111 111 111</a></li>
         </ul>
-      </nav>
-      <ul>
-        <li>
-          <a class="link-contact-header" href="mailto:info@devstudio.com">info@devstudio.com</a>
-        </li>
-        <li><a class="link-contact-header" href="tel:+48111111111">+48 111 111 111</a></li>
-      </ul>
+      </div>
     </header>
 
     <main>
-      <div>
-        <ul>
+      <div class="section-buttons">
+        <ul class="buttons">
           <li><button class="portfolio-button" type="button">Wszystkie</button></li>
           <li><button class="portfolio-button" type="button">Strony</button></li>
           <li><button class="portfolio-button" type="button">Aplikacje</button></li>
@@ -44,9 +55,9 @@
         </ul>
       </div>
 
-      <div>
-        <ul>
-          <li>
+      <div class="section-pictures">
+        <ul class="pictures">
+          <li class="portfolio-pictures">
             <img
               src="images/portfolio1.jpg"
               alt="Laptop z wyświetloną przykładową stroną internetową"
@@ -56,7 +67,7 @@
             <h3>Technocrack</h3>
             <p>Strona internetowa</p>
           </li>
-          <li>
+          <li class="portfolio-pictures">
             <img
               src="images/portfolio2.jpg"
               alt="Dwóch zawodników koszykówki walczących o piłkę"
@@ -66,7 +77,7 @@
             <h3>Grafika New Orlean vs Golden Star</h3>
             <p>Dizajn</p>
           </li>
-          <li>
+          <li class="portfolio-pictures">
             <img
               src="images/portfolio3.jpg"
               alt="Logo restauracji z rybą w tle"
@@ -76,7 +87,7 @@
             <h3>Restauracja Seafood</h3>
             <p>Aplikacja</p>
           </li>
-          <li>
+          <li class="portfolio-pictures">
             <img
               src="images/portfolio4.jpg"
               alt="Czarne słuchawki audio na białym tle"
@@ -86,7 +97,7 @@
             <h3>Projekt Prime</h3>
             <p>Marketing</p>
           </li>
-          <li>
+          <li class="portfolio-pictures">
             <img
               src="images/portfolio5.jpg"
               alt="Dwa kartonowe opakowania"
@@ -96,7 +107,7 @@
             <h3>Projekt Boxes</h3>
             <p>Aplikacja</p>
           </li>
-          <li>
+          <li class="portfolio-pictures">
             <img
               src="images/portfolio6.jpg"
               alt="Czarny monitor komputera z wyświetloną przykładową stroną internetową"
@@ -106,7 +117,7 @@
             <h3>Inspiration has no Borders</h3>
             <p>Strona internetowa</p>
           </li>
-          <li>
+          <li class="portfolio-pictures">
             <img
               src="images/portfolio7.jpg"
               alt="Orwarty magazyn na białym tle"
@@ -116,7 +127,7 @@
             <h3>Magazyn Limited Edition</h3>
             <p>Dizajn</p>
           </li>
-          <li>
+          <li class="portfolio-pictures">
             <img
               src="images/portfolio8.jpg"
               alt="Przykładowy projekt metki"
@@ -126,7 +137,7 @@
             <h3>Projekt LAB</h3>
             <p>Marketing</p>
           </li>
-          <li>
+          <li class="portfolio-pictures">
             <img
               src="images/portfolio9.jpg"
               alt="Dłonie osoby pracującej na laptopie"
@@ -141,30 +152,32 @@
     </main>
 
     <footer class="footer-box">
-      <a class="a" href="./"
-        ><span class="web">Web</span><span class="studio-footer">Studio</span></a
-      >
-      <address>
-        <ul>
-          <li>
-            <a
-              class="footer-address"
-              href="https://goo.gl/maps/4mvbAodd3Mhs6b2KA"
-              target="_blank"
-              rel="noopener noreferrer nofollow"
-              >m. Warszawa, Aleje Jerozolimskie 21</a
-            >
-          </li>
-          <li>
-            <a class="footer-contact" class="footer" href="mailto:info@devstudio.com"
-              >info@devstudio.com</a
-            >
-          </li>
-          <li>
-            <a class="footer-contact" class="footer" href="tel:+48111111111">+48 111 111 111</a>
-          </li>
-        </ul>
-      </address>
+      <div class="cointainer">
+        <a class="a" href="./"
+          ><span class="web">Web</span><span class="studio-footer">Studio</span></a
+        >
+        <address>
+          <ul>
+            <li>
+              <a
+                class="footer-address"
+                href="https://goo.gl/maps/4mvbAodd3Mhs6b2KA"
+                target="_blank"
+                rel="noopener noreferrer nofollow"
+                >m. Warszawa, Aleje Jerozolimskie 21</a
+              >
+            </li>
+            <li>
+              <a class="footer-contact" class="footer" href="mailto:info@devstudio.com"
+                >info@devstudio.com</a
+              >
+            </li>
+            <li>
+              <a class="footer-contact" class="footer" href="tel:+48111111111">+48 111 111 111</a>
+            </li>
+          </ul>
+        </address>
+      </div>
     </footer>
   </body>
 </html>
